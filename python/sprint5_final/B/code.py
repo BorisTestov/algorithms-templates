@@ -1,9 +1,9 @@
-# ! change LOCAL to False before submitting !
-# set LOCAL to True for local testing
-
 from typing import Optional
+import os
 
-LOCAL = True
+
+LOCAL = os.environ.get('REMOTE_JUDGE', 'false') == 'false'
+
 if LOCAL:
     class Node:
         def __init__(self, left=None, right=None, value=0):
