@@ -1,13 +1,10 @@
 package main
 
-/**
-Comment it before submitting 
 type Node struct { 
 	value    int 
 	left   *Node 
 	right  *Node 
 }
-**/
 
 func remove(node *Node, key int) *Node {
     // Your code
