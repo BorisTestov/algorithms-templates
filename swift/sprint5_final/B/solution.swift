@@ -1,19 +1,19 @@
-/*
- Comment it before submitting
-
- open class Node {
-     
-     public var value: Int
-     public var left: Node?
-     public var right: Node?
-     
-     public init(_ value: Int) {
-         self.value = value
-         self.right = nil
-         self.left = nil
-     }
- }
- */
+#if !REMOTE_JUDGE
+open class Node {
+    
+    public var value: Int
+    public var left: Node?
+    public var right: Node?
+    public var size: Int
+    
+    public init(_ value: Int) {
+        self.value = value
+        self.right = nil
+        self.left = nil
+        self.size = 1
+    }
+}
+#endif
 
 
 func remove(root: Node?, key: Int) -> Node? {
